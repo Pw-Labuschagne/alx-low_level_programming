@@ -9,11 +9,11 @@ int main(void)
 {
 char a;
 
-for (a = 'a' , a <= 'z' , c++)
+for (a = 'a' , a <= 'z' , a++)
 {
 putchar(c);
 }
-for (a = 'A' , a <= 'Z' , c++)
+for (a = 'A' , a <= 'Z' , a++)
 {
 putchar(c);
 }

@@ -11,11 +11,11 @@ char a;
 
 for (a = 'a' ; a <= 'z' ; a++)
 {
-putchar(c);
+putchar(a);
 }
 for (a = 'A' ; a <= 'Z' ; a++)
 {
-putchar(c);
+putchar(a);
 }
 putchar('\n');
 return (0);

@@ -6,13 +6,13 @@
 int main(void)
 {
 int a, b, c, d;
-for (a = 0; c <= 99; a++)
+for (a = 48; a <= 57; a++)
 {
-for (b = 0; b <= 99; b++)
+for (b = 48; b <= 57; b++)
 {
-for (c = 0; c <= 99; c++)
+for (c = 48; c <= 57; c++)
 {
-for (d = 0; d <= 99; d++)
+for (d = 48; d <= 57; d++)
 {
 if (((c + d) > (a + b) && c >= a) || a < c)
 {

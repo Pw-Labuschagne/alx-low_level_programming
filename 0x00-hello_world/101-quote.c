@@ -1,6 +1,6 @@
 #include <unistd.h>
-/** 
- * main - notheing here
+/**
+ * main - nothing here
  * Return: 1
  */
 int main(void)

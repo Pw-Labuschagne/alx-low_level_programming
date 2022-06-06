@@ -3,7 +3,7 @@
  * main - it is here betty Ô.o
  * Return: 0
  */
-int main(void);
+int main(void)
 {
 int i, w, q;
 for (i = '0' ; i <= '9' ; i++)

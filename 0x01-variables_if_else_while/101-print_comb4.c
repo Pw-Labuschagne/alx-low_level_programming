@@ -12,12 +12,12 @@ for (w = '0' ; w <= '9' ; w++)
 {
 for (q = '0' ; q <= '9' ; q++)
 {
-if (i < w && w < q);
+if (i < w && w < q)
 {
 putchar(i);
 putchar(w);
 putchar(q);
-if (i != '7');
+if (i != '7')
 {
 putchar(',');
 putchar(' ');

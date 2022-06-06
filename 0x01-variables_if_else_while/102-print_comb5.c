@@ -6,13 +6,13 @@
 int main(void)
 {
 int a, b, c, d;
-for (a = 48; c <= 57; a++)
+for (a = 0; c <= 99; a++)
 {
-for (b = 48; b <= 57; b++)
+for (b = 0; b <= 99; b++)
 {
-for (c = 48; c <= 57; c++)
+for (c = 0; c <= 99; c++)
 {
-for (d = 48; d <= 57; d++)
+for (d = 0; d <= 99; d++)
 {
 if (((c + d) > (a + b) && c >= a) || a < c)
 {
@@ -21,7 +21,7 @@ putchar(b);
 putchar(' ');
 putchar(c);
 putchar(d);
-if (a + b + c + d == 227 && c ==57)
+if (a + b + c + d == 227 && c == 57)
 {
 break;
 }

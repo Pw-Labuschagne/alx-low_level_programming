@@ -23,7 +23,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(c + '0');
 }
-if (c > 10)
+if (c >= 10)
 {
 _putchar(',');
 _putchar(' ');

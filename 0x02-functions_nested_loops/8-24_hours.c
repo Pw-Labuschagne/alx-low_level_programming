@@ -12,7 +12,7 @@ while (h <= 23)
 {
 while (m <= 59)
 {
-_putchar(h / 10);
+_putchar((h / 10) + '0');
 m++;
 }
 h++;

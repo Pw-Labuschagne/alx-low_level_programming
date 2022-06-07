@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.c"
+#include "main."
 /**
  * _abs - it's brakes not?
  * Return: 0

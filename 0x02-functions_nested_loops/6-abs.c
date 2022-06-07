@@ -7,7 +7,9 @@
  */
 int _abs(int r)
 {
-char c[] = (abs(r));
-_putchar(c);
-return (0);
+if (r < 0)
+{
+return (-r);
+}
+return (r);
 }

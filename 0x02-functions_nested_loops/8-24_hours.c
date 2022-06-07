@@ -13,7 +13,7 @@ while (h <= 23)
 {
 while (m <= 59)
 {
-_putchar('%02d:%02d\n', h, m);
+_putchar('%02d', h);
 m++
 }
 h++;

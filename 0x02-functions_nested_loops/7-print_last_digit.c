@@ -13,7 +13,7 @@ if (x < 0)
 x = -x;
 }
 ld = x % 10;
-if (ld < 0);
+if (ld < 0)
 {
 ld = -ld;
 }

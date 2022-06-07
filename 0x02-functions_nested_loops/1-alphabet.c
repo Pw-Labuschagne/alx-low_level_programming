@@ -4,7 +4,7 @@
  * main - alphabet
  * Return: 0
  */
-int main(void)
+void print_alphabet(void)
 {
 int q;
 for (q = 'a' ; q <= 'z' ; q++)

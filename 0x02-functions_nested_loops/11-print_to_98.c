@@ -24,6 +24,7 @@ _putchar(z);
 _putchar('\n');
 }
 }
+}
 else if (n >= 98)
 {
 for (x = n; x >= 98; x--)

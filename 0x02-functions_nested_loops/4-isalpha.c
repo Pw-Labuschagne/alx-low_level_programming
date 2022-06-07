@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * int _isalpha.c - is it alpha
+ * int _isalpha - is it alpha
  * @c: parameter
  * Return 1 or 0
  */

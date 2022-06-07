@@ -4,7 +4,7 @@
  * _islower(int c);
  * Return: 1
  */
-int _islower(int c);
+int _islower(int c)
 {
 if (islower(c))
 {

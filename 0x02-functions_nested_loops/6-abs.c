@@ -5,10 +5,9 @@
  * _abs - it's brakes not?
  * Return: 0
  */
-int _abs(int)
+int _abs(int r)
 {
-int r;
-r=abs(i);
-_putchar(i);
+r=abs(r);
+_putchar(r);
 return (0);
 }

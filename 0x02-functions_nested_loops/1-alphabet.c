@@ -11,5 +11,5 @@ for (q = 'a' ; q <= 'z' ; q++)
 {
 _putchar(q);
 }
-return (0);
+return;
 }

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _islower(int c) - testing caps or not
+ * _islower - testing caps or not
+ * @c - int
  * Return: 1 or 0
  */
 int _islower(int c)

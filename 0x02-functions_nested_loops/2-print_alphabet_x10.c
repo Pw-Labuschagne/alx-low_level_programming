@@ -15,6 +15,7 @@ for (q = 'a'; q <= 'z'; q++)
 _putchar(q);
 }
 _putchar('\n');
+i++;
 }
 return;
 }

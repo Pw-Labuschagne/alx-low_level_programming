@@ -7,11 +7,9 @@
 int main(void)
 {
 char ch[] = "_putchar";
-int i = 0;
-while (i <= 8);
+for (int i = 0; i != 7; i++)
 {
 _putchar(ch[i]);
-i++;
 }
 _putchar('\n');
 return (0);

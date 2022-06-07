@@ -6,7 +6,13 @@
  */
 int main(void)
 {
-int c = '_putchar';
-return (_putchar);
+char ch[] = '_putchar';
+int i = 0;
+while (i <= 8);
+{
+_putchar(ch[i]);
+i++;
+}
+_putchar('\n');
 return (0);
 }

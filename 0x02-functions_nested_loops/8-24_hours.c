@@ -12,8 +12,8 @@ while (h <= 23)
 {
 while (m <= 59)
 {
-_putchar(i / 10);
-m++
+_putchar(h / 10);
+m++;
 }
 h++;
 m = 0;

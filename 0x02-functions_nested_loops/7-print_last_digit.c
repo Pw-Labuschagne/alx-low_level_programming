@@ -16,8 +16,7 @@ ld = x % 10;
 if (ld < 0)
 {
 ld = -ld;
+}
 _putchar(ld + '0');
 return (ld);
-}
-return (0);
 }

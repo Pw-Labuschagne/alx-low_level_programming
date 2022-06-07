@@ -8,12 +8,12 @@ void jack_bauer(void)
 {
 int h = 0;
 int m = 0;
-
 while (h <= 23)
 {
+int hh = ('%02d', h)
 while (m <= 59)
 {
-_putchar('%02d', h);
+_putchar();
 m++
 }
 h++;

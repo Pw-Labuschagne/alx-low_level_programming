@@ -5,8 +5,8 @@
  */
 void print_times_table(int n)
 {
-if (n > 0 && n < 15)
 int x, z, i;
+if (n > 0 && n < 15)
 for (i = 0; i <= n; i++)
 {
 for (x = 0; x <= n; x++)

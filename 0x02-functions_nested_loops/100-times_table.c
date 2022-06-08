@@ -18,10 +18,6 @@ return;
 break;
 }
 z = x * i;
-if (i == 0)
-{
-_putchar(z + '0');
-}
 _putchar(',');
 _putchar(' ');
 _putchar(z + '0');

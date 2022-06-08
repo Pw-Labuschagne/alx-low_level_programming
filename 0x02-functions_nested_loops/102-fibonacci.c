@@ -8,7 +8,7 @@ int main(void)
 int i, a, b, sum;
 a = 1;
 b = 2;
-sum = a + b
+sum = a + b;
 printf("1, 2, \n");
 for (i = 4; i < 50; i++)
 {

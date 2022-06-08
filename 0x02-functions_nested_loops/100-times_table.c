@@ -18,9 +18,24 @@ return;
 break;
 }
 z = x * i;
+if (x == 0)
+{
+_putchar(z + '0');
+}
+if (z < 10 && x != 0)
+{
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
 _putchar(z + '0');
+}
+if (x >= 10)
+{
+_putchar(',');
+_putchar(' ');
+_putchar((z / 10) + '0');
+_putchar((z % 10) + '0');
+}
 }
 _putchar('\n');
 }

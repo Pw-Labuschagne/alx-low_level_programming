@@ -1,27 +1,19 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * print_times_table - well this again
  * @n: integer placeholder
- * Return: 0
  */
 void print_times_table(int n)
 {
+if (n !< 0 && n !> 15)
 int x, z, i;
 for (i = 0; i <= n; i++)
 {
 for (x = 0; x <= n; x++)
 {
-if (n < 0 || n > 15)
-{
-return;
-break;
-}
 z = x * i;
 if (x == 0)
-{
 _putchar(z + '0');
-}
 if (z < 10 && x != 0)
 {
 _putchar(',');

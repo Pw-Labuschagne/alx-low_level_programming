@@ -3,7 +3,7 @@
  * main - its something
  * Return: 0
  */
-int main(void);
+int main(void)
 {
 int i, a, b, sum;
 a = 1;

@@ -38,7 +38,7 @@ _putchar(' ');
 _putchar((z / 10) + '0');
 _putchar((z % 10) + '0');
 }
-else if (z => 100)
+else if (z >= 100)
 {
 _putchar(',');
 _putchar(' ');

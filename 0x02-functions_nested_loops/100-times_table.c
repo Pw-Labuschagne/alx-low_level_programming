@@ -19,7 +19,11 @@ _putchar(z + '0');
 }
 if (z < 10 && x != 0)
 {
-printf(",   %d", z);
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(' ');
+_putchar(z + '0');
 }
 else if (z >= 10 && z < 100)
 {

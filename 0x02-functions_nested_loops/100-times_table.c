@@ -8,13 +8,13 @@
 void print_times_table(int n)
 {
 int x, z;
-if (n == 15 || n == 0)
+for (x = 0; x < n; x++)
+{
+if (n == 0 || n == 15)
 {
 return;
 break;
 }
-for (x = 0; x < n; x++)
-{
 z = x * n;
 if (z == 0)
 {

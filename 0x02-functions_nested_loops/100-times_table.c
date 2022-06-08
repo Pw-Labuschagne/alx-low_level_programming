@@ -15,15 +15,11 @@ for (x = 0; x <= n; x++)
 z = x * i;
 if (x == 0)
 {
-printf("%d", z);
+_putchar(z + '0');
 }
 if (z < 10 && x != 0)
 {
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(' ');
-_putchar(z + '0');
+printf(",   %d", z);
 }
 else if (z >= 10 && z < 100)
 {

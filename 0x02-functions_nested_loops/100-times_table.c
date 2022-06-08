@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * print_times_table - well this again
@@ -17,7 +16,7 @@ if (x == 0)
 {
 _putchar(z + '0');
 }
-if (z < 10 && x != 0)
+else if (z < 10 && x != 0)
 {
 _putchar(',');
 _putchar(' ');

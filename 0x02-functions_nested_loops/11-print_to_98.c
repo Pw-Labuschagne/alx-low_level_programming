@@ -14,13 +14,13 @@ for (z = n; z <= 98; z++)
 {
 if (z != 98)
 {
-_putchar(z + '0');
+_putchar(z);
 _putchar(',');
 _putchar(' ');
 }
 else if (z == 98)
 {
-_putchar(z + '0');
+_putchar(z);
 _putchar('\n');
 }
 }
@@ -31,13 +31,13 @@ for (x = n; x >= 98; x--)
 {
 if (x != 98)
 {
-_putchar(x + '0');
+_putchar(x);
 _putchar(',');
 _putchar(' ');
 }
 else if (x == 98)
 {
-_putchar(x + '0');
+_putchar(x);
 putchar('\n');
 }
 }

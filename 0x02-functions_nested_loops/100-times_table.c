@@ -30,7 +30,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(z + '0');
 }
-if (x >= 10 && < 100)
+if (z >= 10 && z < 100)
 {
 _putchar(',');
 _putchar(' ');

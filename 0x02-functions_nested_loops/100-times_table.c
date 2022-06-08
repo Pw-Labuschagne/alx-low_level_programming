@@ -13,7 +13,9 @@ for (x = 0; x <= n; x++)
 {
 z = x * i;
 if (x == 0)
-_putchar(z + '0');
+{
+printf("%d", z);
+}
 if (z < 10 && x != 0)
 {
 _putchar(',');

@@ -18,7 +18,7 @@ return;
 break;
 }
 z = x * i;
-if (z == 0)
+if (i == 0)
 {
 _putchar(z + '0');
 }

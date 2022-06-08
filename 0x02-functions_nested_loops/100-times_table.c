@@ -27,13 +27,23 @@ if (z < 10 && x != 0)
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
+_putchar(' ');
 _putchar(z + '0');
 }
-if (x >= 10)
+if (x >= 10 && < 100)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar((z / 10) + '0');
+_putchar((z % 10) + '0');
+}
+else
 {
 _putchar(',');
 _putchar(' ');
 _putchar((z / 10) + '0');
+_putchar(((z / 10) % 10) + '0');
 _putchar((z % 10) + '0');
 }
 }

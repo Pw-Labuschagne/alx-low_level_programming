@@ -22,8 +22,8 @@ if ((x % 5) == 0)
 {
 printf("Buzz ");
 }
-printf("%d ", x);
 }
+printf("%d ", x);
 }
 return (0);
 }

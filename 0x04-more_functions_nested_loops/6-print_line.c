@@ -2,7 +2,7 @@
 /**
  * print_line - functionsssss
  * @n: int
- * Return: 0
+ * Return: 1
  */
 void print_line(int n)
 {
@@ -13,9 +13,10 @@ _putchar('\n');
 }
 else if (n > 0)
 {
-for (c = 0; c < n; c++)
+for (c = 0; c <= n; c++)
 {
 _putchar('_');
 }
 }
+return;
 }

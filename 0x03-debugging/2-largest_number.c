@@ -24,6 +24,5 @@ else if (c > a && c > b)
 {
 largest = c;
 }
-printf("%d", largest);
-return (0);
+return (largest);
 }

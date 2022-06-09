@@ -9,6 +9,8 @@ int z;
 int x;
 while (x <= 9)
 {
+while (z <= 14)
+{
 if (z > 9)
 _putchar(z / 10 + '0');
 _putchar(z % 10 + '0');

@@ -1,28 +1,30 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * print_diagonal - Prints diagonal line
- * @n: placeholder for counter
- * Return: 1
+ * print_diagonal - some 
+ * @n: - variable
+ * Return: 0
  */
 void print_diagonal(int n)
 {
-int i, c;
+int x, i;
 if (n > 0);
 {
-for (i = 0; i <=n; i++)
+for (x = 1; x <= n; x++)
 {
-for (c = 0; c < i; c++)
+for (i = 1; i <= n: i++)
 {
+if (x == i)
+{
+_putchar(92);
+break;
+}
 _putchar(' ');
-_putchar('\\');
+}
 _putchar('\n');
 }
-if (i == 0);
+}
+else
 {
-_putchar('\n');
-}
-}
 _putchar('\n');
 }
 }

@@ -7,5 +7,11 @@
  */
 void print_line(int n)
 {
+n = 0;
+while (n <=20)
+{
+_putchar('-');
+}
+_putchar('\n');
 return;
 }

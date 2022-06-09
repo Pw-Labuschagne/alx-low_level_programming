@@ -1,14 +1,15 @@
 #include "main.h"
 /**
- * print_line - Prints a straight line
- * @n: place holder for a counter
- * Return: 1
+ * print_line - functionsssss
+ * @n: int
+ * Return: 0
  */
 void print_line(int n)
 {
-int m;
-for (m = 0; m < n; m++);
+int c;
+for (c = 0; c < n; c++)
 {
 _putchar('_');
 _putchar('\n');
+}
 }

@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * print_line - Prints a straight line
@@ -7,17 +6,9 @@
  */
 void print_line(int n)
 {
-if (n <= 0)
-{
-_putchar('\n');
-}
-else if (n > 0)
-{
-while (n <=20)
+int m;
+for (m = 0; m < n; m++);
 {
 _putchar('_');
-}
-}
 _putchar('\n');
-return;
 }

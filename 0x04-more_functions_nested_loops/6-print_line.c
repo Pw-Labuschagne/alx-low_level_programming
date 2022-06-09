@@ -13,10 +13,9 @@ _putchar('\n');
 }
 else if (n > 0)
 {
-for (c = 0; c <= n; c++)
+for (c = 1; c <= n; c++)
 {
-_putchar('_');
+_putchar(95);
 }
 }
-return;
 }

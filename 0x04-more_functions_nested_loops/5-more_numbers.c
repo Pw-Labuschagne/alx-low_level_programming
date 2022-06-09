@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * more_numbers - It is evebn more
@@ -12,12 +13,14 @@ while (x <= 9)
 while (z <= 14)
 {
 if (z > 9)
-_putchar(z / 10 + '0');
-_putchar(z % 10 + '0');
+{
+_putchar((z / 10) + '0');
+_putchar((z % 10) + '0');
 a++;
 }
 _putchar('\n');
 x++;
 z = 0;
+}
 }
 }

@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "main.c"
+#include "main.h"
 /**
  * print_most_numbers - well it prints most numbers
  * Return: 1;

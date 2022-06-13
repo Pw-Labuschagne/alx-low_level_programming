@@ -5,9 +5,9 @@
  * @*b: Place holder int 2
  * Return: 1
  */
-void swap_int(int *a, int* b)
+void swap_int(int *a, int *b)
 {
-int *i = b;
-*a = *b;
-*b = *i;
+int *i = *b;
+*b = *a;
+*a = *i;
 }

@@ -14,7 +14,6 @@ for (i = 0; str[i] != '\0'; i++)
 }
 if (((i % 2) == 0) && (i != 0))
 {
-i = i - 1;
 for (c = (i / 2); c <= i ; c++)
 {
 _putchar(str[c]);
@@ -26,7 +25,7 @@ for (c = ((i - 1) / 2); c <= 0; c--)
 {	
 _putchar(str[c]);
 }
+}
 _putchar('\n');
 return;
-}
 }

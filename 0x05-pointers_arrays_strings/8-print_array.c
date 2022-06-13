@@ -4,7 +4,7 @@
  * print_array - Prints n elements of and array
  * @a: integer type declared as a pointer
  * @n: integer value to be held
- * Return: 
+ * Return: 1
  */
 void print_array(int *a, int n)
 {

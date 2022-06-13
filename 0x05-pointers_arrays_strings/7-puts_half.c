@@ -13,7 +13,7 @@ for (i = 0; str[i] != '\0'; i++)
 }
 if ((i % 2) == 0)
 {
-for (c = 0; c <= (i / 2); c++)
+for (c = (i / 2); c <= i ; c++)
 {
 _putchar(str[c]);
 }

@@ -11,10 +11,12 @@ int c = 0;
 for (x = 0; str[x] != '\0'; x++)
 {
 }
+x = x - 1;
 while ( c <= x)
 {
 _putchar(str[c]);
 c = c + 2;
 }
+_putchar('\n');
 return;
 }

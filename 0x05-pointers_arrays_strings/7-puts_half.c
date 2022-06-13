@@ -14,14 +14,14 @@ for (i = 0; str[i] != '\0'; i++)
 }
 if (((i % 2) == 0) && (i != 0))
 {
-for (c = ((i / 2) + 1); c <= i ; c++)
+for (c = (i / 2); c < i ; c++)
 {
 _putchar(str[c]);
 }
 }
 else if (((i % 2) != 0) && (i != 0))
 {
-for (c = i; c >= ((i - 1) / 2); c--)
+for (c = ((i - 1) / 2); c <= i; c++)
 {
 _putchar(str[c]);
 }

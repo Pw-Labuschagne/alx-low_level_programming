@@ -11,7 +11,7 @@ int x;
 for (a = 0; s[a] != '\0'; a++)
 {
 }
-for (x = a; x != 0; x--)
+for (x; x <= 0; x--)
 {
 _putchar(s[x]);
 }

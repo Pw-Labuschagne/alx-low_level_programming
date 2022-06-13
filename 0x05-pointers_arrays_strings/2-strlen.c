@@ -7,12 +7,6 @@
 int _strlen(char *s)
 {
 int i;
-int sum;
-
-for (i = 0; i <= (s[i]); i++)
-{
-if (s[i] != '0')
-sum ++;
-}
-return (sum);
+for (i = 0; s[i] != 0; i++)
+return (i);
 }

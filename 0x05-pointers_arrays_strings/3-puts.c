@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _puts - displays string tio stout
- * @str - the string placeholder
+ * @str:  the string placeholder
  * Return: 1
  */
 void _puts(char *str)

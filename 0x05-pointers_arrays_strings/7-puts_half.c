@@ -20,12 +20,14 @@ for (c = (i / 2); c <= i ; c++)
 _putchar(str[c]);
 }
 }
-else if (((i % 2) != 0) && (i != 0));
+else if (((i % 2) != 0) && (i != 0))
 {
 c = ((i -1) / 2);
-for 
+for
+{	
 _putchar(str[c]);
 }
 _putchar('\n');
 return;
+}
 }

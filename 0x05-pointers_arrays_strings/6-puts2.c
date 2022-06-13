@@ -12,7 +12,7 @@ for (x = 0; str[x] != '\0'; x++)
 {
 }
 x = x - 1;
-while ( c <= x)
+while (c <= x)
 {
 _putchar(str[c]);
 c = c + 2;

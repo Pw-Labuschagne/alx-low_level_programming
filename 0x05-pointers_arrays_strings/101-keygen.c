@@ -12,7 +12,8 @@ void GeneratePassword(int l)
 	{
 		int a = 0;
 		int random = 0;
-		
+		int l = 10;
+
 		char num[] = "0123456789";
 		char alph[] = "abcdefghijklmnopqrstuvwxyz";
 		char ALPH[] = "ABCDEFGHIJKLOMNPQRSTUVWXYZ";

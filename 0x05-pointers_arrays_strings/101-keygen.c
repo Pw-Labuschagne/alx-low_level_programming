@@ -29,7 +29,7 @@ void GeneratePassword(int l)
 					{
 						pass[a] = ALPH[rand() % 26];
 						random = rand() % 4;
-						print("%c", pass[a]);
+						printf("%c", pass[a]);
 					}
 				else if (random == 2)
 					{
@@ -58,7 +58,7 @@ void GeneratePassword(int l)
 
 int main(void)
 	{
-		int l = 15;
+		const int l = 15;
 		GeneratePassword(l);
 		return (0);
 	}

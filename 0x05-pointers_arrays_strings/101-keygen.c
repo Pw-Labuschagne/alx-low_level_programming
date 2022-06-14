@@ -8,7 +8,7 @@
  * @l - lenght of desired password
  * Return: 1
  */
-void GeneratePassword(int)
+void GeneratePassword(int l)
 	{
 		int a = 0;
 		int random = 0;
@@ -17,7 +17,7 @@ void GeneratePassword(int)
 		char alph[] = "abcdefghijklmnopqrstuvwxyz";
 		char ALPH[] = "ABCDEFGHIJKLOMNPQRSTUVWXYZ";
 		char spes[] = "!@#$%^&*?_";
-		char pass[];
+		char pass[] = 10;
 
 		srand((unsigned int)(time(NULL)));
 

@@ -6,15 +6,17 @@
  */
 void rev_string(char *s)
 {
-int x;
-if (*s != '\0')
+int x = 0, z = 0, left;
+while (s[z] != '\0')
 {
-for (x = 0; s[x] != '\0'; x++)
-{
+z++;
 }
-while (x >= 0)
+z = z - 1;
+while (z > x)
 {
-}
+left = s[z];
+s[z--] = s[x];
+s[x++] = left;
 }
 return;
 }

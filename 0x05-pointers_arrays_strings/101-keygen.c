@@ -13,13 +13,13 @@ void GeneratePassword(int l)
 		int a = 0;
 		int random = 0;
 		
-		srand((unsinged int)(time(NULL)));
+		srand((unsigned int)(time(NULL)));
 		
 		char num[] = "0123456789";
 		char alph[] = "abcdefghijklmnopqrstuvwxyz";
 		char ALPH[] = "ABCDEFGHIJKLOMNPQRSTUVWXYZ";
 		char spes[] = "!@#$%^&*?_";
-		char pass[r];
+		char pass[l];
 
 		random = rand() % 4;
 
@@ -41,13 +41,13 @@ void GeneratePassword(int l)
 					{
 						pass[a] = num[rand() % 10];
 						random = rand() % 4;
-						printf("%c", pass[a];
+						printf("%c", pass[a]);
 					}
 				else
 					{
 						pass[a] = spes[rand() % 9];
 						random = rand() % 4;
-						printf("%c", pass[a];
+						printf("%c", pass[a]);
 					}
 			}
 	}

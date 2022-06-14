@@ -17,7 +17,7 @@ void GeneratePassword(int l)
 		char alph[] = "abcdefghijklmnopqrstuvwxyz";
 		char ALPH[] = "ABCDEFGHIJKLOMNPQRSTUVWXYZ";
 		char spes[] = "!@#$%^&*?_";
-		char pass[] = 10;
+		char pass[1];
 
 		srand((unsigned int)(time(NULL)));
 
@@ -58,6 +58,7 @@ void GeneratePassword(int l)
 
 int main(void)
 	{
+		int l = 10;
 		GeneratePassword(l);
 		return (0);
 	}

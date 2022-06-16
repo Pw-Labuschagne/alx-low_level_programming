@@ -5,7 +5,7 @@
  * @dest: Destination code
  * Return: Concated string
  */
-char *strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 char cat1[] = "*src";
 char cat2[] = "*dest";

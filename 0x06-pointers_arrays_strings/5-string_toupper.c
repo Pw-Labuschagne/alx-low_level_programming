@@ -4,17 +4,16 @@
  * @l: Character to check
  * Return: 0
  */
-char *string_toupper(char *)
+char *string_toupper(char *l)
 {
 int c = 0;
-char *l;
 if (l[c] != '\0')
 {
 while ((l[c] >= 97) || (l[c] <= 122))
 {
 l[c] = l[c] - 32;
 }
-c++
+c++;
 }
 return (l);
 }

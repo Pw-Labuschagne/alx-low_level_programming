@@ -6,6 +6,7 @@
  */
 char *cap_string(char *str)
 {
+char s[] = {9, 10, 32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
 int i = 0;
 while (str[i] != '\0')
 {
@@ -13,11 +14,11 @@ if (str[i] <= 122 && str[i] >= 97)
 {
 str[i] = str[i] - 32;
 }
-if (str[i] == 32 || str[i] == '\t' || str[i] == '\n' || str[i] == 44 || str[i] == 59 || str[i] == 46 || str[i] == 33 || str[i] == 63 || str[i] == 34 || str[i] == 40 || str[i] == 41 || str[i] == 123 || str[i] == 125)
+if (str[i] == s[i])
 {
 if (str[i + 1] <= 122 && str[i + 1] >= 97)
 {
-str[ i + 1] = str[i + 1] - 32;
+str[i + 1] = str[i + 1] - 32;
 }
 }
 i++;

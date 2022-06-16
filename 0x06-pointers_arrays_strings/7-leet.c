@@ -9,15 +9,16 @@ char *leet(char *c)
 char a[] = "aAeEoOtTlL";
 char n[] = "4433007711";
 int i = 0, z = 0;
-for (c[i] != '\0'; i++)
+while (c[i] != '\0'; i++)
 {
-for (z < 9; z++)
+while (z < 9)
 {
 if (a[z] == c[i])
 {
 c[i] = n[z];
 }
 }
+z++;
 }
 return (c);
 }

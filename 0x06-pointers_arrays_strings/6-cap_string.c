@@ -2,11 +2,11 @@
 /**
  * cap_string - Capitalizes all words of a string
  * @str: String
- * Return: 0
+ * Return: str
  */
 char *cap_string(char *str)
 {
-char s[] = {9, 10, 32, 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
+char s[] = {32, '\t', '\n', 33, 34, 40, 41, 44, 46, 59, 63, 123, 125};
 int i = 0;
 while (str[i] != '\0')
 {

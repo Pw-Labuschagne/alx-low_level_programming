@@ -9,7 +9,7 @@ char *_strcat(char *dest, char *src)
 {
 char cat1[] = "*src";
 char cat2[] = "*dest";
-char catd[];
+char catd[100];
 
 int a = 0, b = 0;
 
@@ -22,7 +22,7 @@ b++;
 a = 0;
 while (cat2[a] != '\0')
 {
-catd[b] = cat[a];
+catd[b] = cat2[a];
 a++;
 b++;
 }

@@ -8,10 +8,10 @@ char *leet(char *c)
 {
 char a[] = "aAeEoOtTlL";
 char n[] = "4433007711";
-int i = 0, z;
-for ( ; c[i] != '\0'; i++)
+int i = 0, z = 0;
+for (c[i] != '\0'; i++)
 {
-for (z = 0; z < 9; z++)
+for (z < 9; z++)
 {
 if (a[z] == c[i])
 {

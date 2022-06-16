@@ -6,13 +6,14 @@
  */
 char *cap_string(char *str)
 {
-int i;
+int i = 0;
 while (str[i] != '\0')
 {
-if (i = 0; (str[i] >= 32) && (str[i] <= 47); i++)
+if (str[i] >= 32 && str[i] <= 47)
 {
 str[i++] = str[i++] - 32;
 }
+i++;
 }
 return ();
 }

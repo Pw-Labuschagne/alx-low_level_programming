@@ -11,9 +11,10 @@ while (str[i] != '\0')
 {
 if (str[i] >= 32 && str[i] <= 47)
 {
-str[i++] = str[i++] - 32;
+i++;
+str[i] = str[i] - 32;
 }
 i++;
 }
-return ();
+return (0);
 }

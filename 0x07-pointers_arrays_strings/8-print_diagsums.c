@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * print_diagsums - Prints sums of diagonal matrix of array
@@ -11,7 +12,7 @@ int i, sum;
 sum = 0;
 for (i = 0; i < size; i++)
 {
-sum += a[i][i];
+sum = (a[i] * a[i]);
 }
-_putchar('%d, ', sum)
+printf("%d, ", sum);
 }

@@ -3,6 +3,7 @@
  * _strchr - Returns frist character of c
  * @s: String to be scanned
  * @c: character to search for
+ * Return: 0
  */
 char *_strchr(char *s, char c)
 {

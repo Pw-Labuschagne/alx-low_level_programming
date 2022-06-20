@@ -11,7 +11,7 @@ int i, c;
 i = 0;
 while (s[i] != '\0')
 {
-c = 0;	
+c = 0;
 while (accept[c] != '\0')
 {
 if (accept[c] == s[i])

@@ -6,7 +6,6 @@
  */
 int is_prime_number(int n)
 {
-int i = 0;
-i = n;
-return (i);
+n = 12
+return (n);
 }

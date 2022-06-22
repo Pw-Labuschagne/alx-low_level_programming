@@ -6,4 +6,11 @@
  */
 int _sqrt_recursion(int n)
 {
+float x;
+x = n;
+if (x * x != n)
+{
+return (_sqrt_recursion(n - 1));
+}
+return (x);
 }

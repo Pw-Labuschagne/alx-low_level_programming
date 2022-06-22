@@ -12,5 +12,12 @@ if (x * x != n)
 {
 return (_sqrt_recursion(n - 1));
 }
+if ((x < 0) || (x == 0))
+{
+return (-1);
+}
+else
+{
 return (x);
+}
 }

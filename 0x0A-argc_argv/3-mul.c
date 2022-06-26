@@ -8,16 +8,17 @@
  */
 int main(int argc, char *argv[])
 {
-int sum = atoi(argv[1]);
-if (argc < 1)
+int sum;
+if(argc > 1)
 {
-printf("Error\n");
-return (1);
+sum = atoi(argv[1]);
+sum = sum *atoi(argv[2]);
+printf("%d\n", sum);
 }
 else
 {
-sum = sum *atoi(argv[2]);
-printf("%d\n", sum);
+printf("Error\n");
+return (1);
 }
 return (0);
 }

@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 int sum;
-if(argc > 1)
+if (argc > 2)
 {
 sum = atoi(argv[1]);
 sum = sum *atoi(argv[2]);

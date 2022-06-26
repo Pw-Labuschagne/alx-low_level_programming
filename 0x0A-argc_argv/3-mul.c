@@ -12,10 +12,11 @@ int sum = atoi(argv[1]);
 if (argc < 1)
 {
 printf("Error\n");
+return (1);
 }
-else 
+else
 {
-sum = sum * atoi(argv[2]);
+sum = sum *atoi(argv[2]);
 printf("%d\n", sum);
 }
 return (0);

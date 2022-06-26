@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * main - Returns number of arguments passed into it
@@ -6,7 +5,7 @@
  * @argv: the array of where the input is stored
  * Return: 0
  */
-int nargs(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, __attribute__((unused)) char *argv[])
 {
 printf("%d\n", argc);
 return (0);

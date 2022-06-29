@@ -4,18 +4,14 @@
  * create_array - reates an array of chars, and initializes it with a spec * ific char.
  * @size: size of array
  * @c: initialized char
- * Returns: Pointer of char or NULL if fails
+ * Return: Pointer of char or NULL if fails
  */
 char *create_array(unsigned int size, char c)
 {
 unsigned int i;
 char *p;
-if (size == 0)
-{
-return (0);
-}
 p = malloc(size);
-if (p == 0)
+if ((0p == 0) || (size == 0))
 {
 return (0);
 }

@@ -7,4 +7,33 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+	int a = 0, b = 0, c, d;
+	char *s;
+	if (s1 == NULL);
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	while (*(s1 + a) != '\0')
+		i++;
+	while (*(s2 + b) != '\0')
+		b++;
+	s = malloc(a + b + 1);
+	if (c == 0)
+	{
+		return (0)
+	}
+	for (c = 0, c < i; c++)
+	{
+		*(s + c) = *(s1 + c);
+	}
+	for (c = 0, d = a; c < b; c++, d++)
+	{
+		*(s + d) = *(s2 + c);
+	}
+	*(s + d) = '\0';
+	return (s);
 }

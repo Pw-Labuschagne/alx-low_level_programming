@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _strdup - copy of the string given as a parameter.
  * @str: Given string value
@@ -12,7 +13,7 @@ if (str == 0)
 {
 return (0);
 }
-while (*(s + i) != '\0')
+while (*(str + i) != '\0')
 {
 i++;
 }

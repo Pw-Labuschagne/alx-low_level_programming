@@ -14,6 +14,7 @@ if (size == 0)
 {
 return (0);
 }
+p = malloc(sizeof (int) * size);
 for (i = 0; i < size; i++)
 {
 *(p + i) = c;

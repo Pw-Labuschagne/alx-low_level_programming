@@ -14,7 +14,11 @@ if (size == 0)
 {
 return (0);
 }
-p = malloc(sizeof (int) * size);
+p = malloc(size);
+if (p == 0)
+{
+return (0);
+}
 for (i = 0; i < size; i++)
 {
 *(p + i) = c;

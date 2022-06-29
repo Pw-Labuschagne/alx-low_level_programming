@@ -20,7 +20,7 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 	while (*(s1 + a) != '\0')
-		i++;
+		a++;
 	while (*(s2 + b) != '\0')
 		b++;
 	s = malloc(a + b + 1);
@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (0);
 	}
-	for (c = 0, c < i; c++)
+	for (c = 0, c < a; c++)
 	{
 		*(s + c) = *(s1 + c);
 	}

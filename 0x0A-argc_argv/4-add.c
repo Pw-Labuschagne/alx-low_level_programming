@@ -8,12 +8,10 @@
  */
 int main(int argc, char *argv[])
 {
-int c, i, sum = 0;
+int i, sum = 0;
 for (i = 0; i < argc; i++)
 {
-for (c = 0; c < *argv[c]; c++)
-{
-if (*argv[c] >= 12)
+if (*argv[i] >= 12)
 {
 printf("Error\n");
 return (1);
@@ -21,7 +19,6 @@ return (1);
 else
 {
 sum = sum + *argv[i];
-}
 }
 }
 printf("%d\n", sum);

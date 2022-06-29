@@ -17,7 +17,7 @@ while (*(str + i) != '\0')
 {
 i++;
 }
-s = malloc(i + 1);
+s = malloc(sizeof (int) * (i + 1));
 if (s == 0)
 {
 return (0);

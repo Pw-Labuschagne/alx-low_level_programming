@@ -15,7 +15,7 @@ return (0);
 }
 while (str[i] != '\0')
 {
-i++
+i++;
 }
 s = malloc(sizeof (int) * i);
 if (s == 0)

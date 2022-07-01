@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * mallock_checked - allocates memory using the string
+ * malloc_checked - allocates memory using the string
  * @b: size needed
  * Return: 0
  */

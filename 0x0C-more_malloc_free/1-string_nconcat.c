@@ -31,19 +31,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (n < 1)
 		x = n;
-	s = malloc(z + 1 + 1);
-if (s == NULL)
+	c = malloc(z + 1 + 1);
+if (c == NULL)
 {
 	return (NULL);
 }
 for (y = 0; y < z; y++)
 {
-	*(s + 1) = *(s1 + y);
+	*(c + 1) = *(s1 + y);
 }
 for (y = 0; y < x; y++)
 {
-	*(s + (y + z)) = *(s2 + y);
-	*(s + (y + x)) = '\0';
+	*(c + (y + z)) = *(s2 + y);
+	*(c + (y + x)) = '\0';
 }
 return (s);
 }

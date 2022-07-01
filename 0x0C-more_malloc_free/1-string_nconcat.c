@@ -12,7 +12,7 @@ int _sl(char *i) /** not allowdto use standard functions??*/
 {
 	int a;
 
-	for (a = 0; s[i] != '\0'; a++)
+	for (a = 0; i[a] != '\0'; a++)
 		;
 	return (a);
 }

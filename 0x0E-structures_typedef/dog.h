@@ -11,15 +11,13 @@
 struct dog
 {
 char *name;
-float *age;
+float age;
 char *owner;
 };
 
-void the_dog(dog *p, char *name, float *age, char *owner);
+void the_dog(struct dog *p, char *name, float *age, char *owner);
 void print(struct dog *p);
 
-typedef struct dog dovoid print(struct dog *p);
-
-typedef struct dog dog_t;;
+typedef struct dog dog_t;
 
 #endif

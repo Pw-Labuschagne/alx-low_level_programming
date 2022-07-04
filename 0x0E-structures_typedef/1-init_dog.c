@@ -3,7 +3,7 @@
 /**
  * init_dog - initialize new variable struct dog
  * @d: placeholder for address
- * @name: name 
+ * @name: name
  * @age: age
  * @owner: owner of dog
  * Return: 0

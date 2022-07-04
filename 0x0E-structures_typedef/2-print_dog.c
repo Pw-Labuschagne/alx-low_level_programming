@@ -17,7 +17,14 @@ printf("Name: %s\n", d->name);
 {
 	printf("Name: (nill)\n");
 }
+if (d->age != 0)
+{
 printf("Age: %f\n", d->age);
+}
+	else
+{
+	printf("Age: (nill)\n");
+}
 if (d->owner != NULL)
 {
 printf("Owner: %s\n", d->owner);

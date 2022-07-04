@@ -6,12 +6,13 @@
  * @argc: not being used
  * Return: 0
  */
-int main(char argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int i;
 while (i < argc)
 {
 printf("%s\n", argv[i]);
-return (0);
+i++;
 }
+return (0);
 }

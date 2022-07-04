@@ -6,8 +6,12 @@
  * @argc: not being used
  * Return: 0
  */
-int main((__attribute__((unused)) char argc), char *argv[])
+int main(char argc, char *argv[])
 {
-printf("%s\n", argv[0]);
+int i;
+while (i < argc)
+{
+printf("%s\n", argv[i]);
 return (0);
+}
 }

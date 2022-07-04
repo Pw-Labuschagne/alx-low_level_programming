@@ -15,9 +15,9 @@ float age;
 char *owner;
 };
 
-void the_dog(struct dog *p, char *name, float *age, char *owner);
-void print(struct dog *p);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 
-typedef struct dog dog_t;
+typedef struct dog_t *new_dog(char *name, float age, char *owner);
 
 #endif

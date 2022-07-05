@@ -8,22 +8,21 @@
  * @owner: owner
  * Return: 0
  */
-struct dog_t
-{
-char *name;
-float age;
-char *owner;
-};
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-struct dog_t *dog2;
+struct dog *dog_t;
 
-dog2 = malloc(sizeof(struct dog_t));
-if (dog2 == NULL)
-	return(NULL);
-dog2->name = name;
-dog2->owner = owner;
-dog2->age = age;
-return (struct dog *)dog2;
+dog_t = malloc(sizeof(dog_t));
+if (dog_t != NULL)
+{
+dog_t->name = name;
+dog_t->owner = owner;
+dog_t->age = age;
+}
+else
+{
+return (NULL);
+}
+return ((struct dog *)dog_t);
 }

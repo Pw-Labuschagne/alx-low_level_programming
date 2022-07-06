@@ -1,6 +1,6 @@
-#include <stddef.h>
+#include "function_pointers"
 #include <stdio.h>
-#include "function_pointers.h"
+#include <stddef.h>
 /**
  * array_iterator - executes file given as parameter
  * @array: array of integers

@@ -2,12 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *
+ * main - Preforms simple arithmic functions which are pointed to
+ * @argc: number of arguments
+ * @argv: value of arguments
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
 
-int (*calc)(int,int);
+int (*calc)(int, int);
 
 int a, b, operator;
 a = (atoi(argv[1]));
@@ -20,23 +23,23 @@ if (argc != 4)
 	printf("Error\n");
 	exit(98);
 }
-switch(operator)
+switch (operator)
 {
-	case '+' : 
+	case '+':
 		break;
-	case '-' :
+	case '-':
 		break;
-	case '*' :
+	case '*':
 		break;
-	case '/' :
+	case '/':
 		break;
-	case '%' :
+	case '%':
 		break;
-	default :
+	default:
 		printf("Error\n");
 		exit(99);
 }
 calc = get_op_func(argv[2]);
 printf("%d\n", calc(a, b));
-return(0);
+return (0);
 }

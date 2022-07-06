@@ -2,12 +2,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * @get_op_func: returns the function needed
+ * get_op_func - returns the function needed
  * @s: points to function needed
  * Return: the calc of function
  */
-op_t ops[] = 
+int (*get_op_func(char *s))(int, int)
 {
+op_t ops[] = {
 	{"+", op_add},
 	{"-", op_sub},
 	{"*", op_mul},
@@ -15,8 +16,6 @@ op_t ops[] =
 	{"%", op_mod},
 	{NULL, NULL}
 };
-int (*get_op_func(char *s))(int,int)
-{
 int i = 0;
 while (i < 6)
 {

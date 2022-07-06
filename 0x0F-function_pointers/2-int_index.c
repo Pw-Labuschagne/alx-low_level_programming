@@ -19,7 +19,10 @@ if (cmp(array[i]) != 0)
 return (i);
 }
 }
+if (cmp == NULL)
+{
 return (0);
+}
 }
 return (-1);
 }

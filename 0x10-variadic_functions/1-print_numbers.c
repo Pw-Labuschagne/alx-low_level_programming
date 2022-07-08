@@ -10,6 +10,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list list;
 		unsigned int a;
+
+		va_start(list, n);
+
 	if (n == 1)
 	{
 		printf("%i\n", va_arg(list, int));

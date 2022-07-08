@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
- * sum_them_all - adds all parameters 
- * @n: Ubsigned int for arguments
+ * sum_them_all - adds all paramet
+ * @n: Ubsigned int for argument
  * @...: variable arguments
  * @Return: 0 for n == 0 and int as suc
  */
@@ -25,6 +25,6 @@ all += va_arg(sum, int);
 }
 va_end(sum);
 
-return (all}
+return (all);
 }
 }

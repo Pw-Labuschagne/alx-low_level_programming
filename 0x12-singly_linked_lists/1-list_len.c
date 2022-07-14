@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  * list_len - Returns number of elements in a linked list list_t
  * @list_t: linked list provided
@@ -11,6 +11,7 @@ int i = 0;
 
 	while (h != NULL)
 	{
+		h = h->next;
 		i++;
 	}
 return (i);

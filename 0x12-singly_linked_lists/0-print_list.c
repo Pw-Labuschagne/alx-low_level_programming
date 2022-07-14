@@ -24,6 +24,5 @@ while (h != NULL)
 	}
 c++;
 }
-printf("\n");
 return (c);
 }

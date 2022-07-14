@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * add_node_end - Adds node to the end of list
- * @head: Pointer to list 
+ * @head: Pointer to list
  * @str: string to be added
  * Return: Address of new element
  */
@@ -16,7 +16,7 @@ if (str == NULL || ptr == NULL)
 	return (0);
 }
 
-while(str[i] != '\0')
+while (str[i] != '\0')
 {
 	i++;
 }

@@ -6,5 +6,9 @@
  */
 void free_list(list_t *head)
 {
-free(head);
+list_t *frees;
+for (frees = head; frees != NULL; frees = frees->next)
+{
+free(frees);
+}
 }

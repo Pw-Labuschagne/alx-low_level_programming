@@ -2,7 +2,7 @@
 /**
  * print_list - Prints all elements of list_t
  * @list_t: The singley linked list supplied
- * @h: pointer to 
+ * @h: pointer to string in list_t
  * Return: Elements of a list being printed
  */
 
@@ -16,15 +16,13 @@ while (h != NULL)
 	{
 		printf("[0] (nil)\n");
 		h = h->next;
-		continue;
-		c++;
 	}
-	else 
+	else
 	{
 		printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
-		c++;
 	}
+c++;
 }
 return (c);
 }

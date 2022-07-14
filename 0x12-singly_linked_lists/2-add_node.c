@@ -17,9 +17,10 @@ if (head == NULL)
 
 if (str == NULL)
 {
-	ptr->str = NULL;
+	/*ptr->str = NULL;
 	ptr->len = 0;
-	ptr->next = *head;
+	ptr->next = *head;*/
+	return (0);
 }
 
 ptr->str = strdup(str);

@@ -1,7 +1,8 @@
 ; This was something new
 ;Not really aware of the whole thing, but getting there
+global _start
+
 section .text
-	global _start
 
 _start:
 	mov edx, len

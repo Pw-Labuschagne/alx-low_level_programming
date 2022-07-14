@@ -7,18 +7,11 @@
  */
 size_t list_len(const list_t *h)
 {
-	int counter = 0;
-	
-	if (h == NULL)
+int i = 0;
+
+	while (h != NULL)
 	{
-		_putchar('0');
+		i++;
 	}
-	struct list_t *ptr = NULL;
-	ptr = h;
-	while (ptr != NULL)
-	{
-		counter++;
-		ptr = ptr->next;
-	}
-	return (counter);
+return (i);
 }

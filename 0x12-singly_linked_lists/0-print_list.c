@@ -1,7 +1,6 @@
 #include "lists.h"
 /**
  * print_list - Prints all elements of list_t
- * @list_t: The singley linked list supplied
  * @h: pointer to string in list_t
  * Return: Elements of a list being printed
  */
@@ -11,8 +10,9 @@ size_t print_list(const list_t *h)
 unsigned int c = 0;
 
 if (h == NULL)
+{
 	printf("[0] (nil)\n");
-
+}
 
 while (h != NULL)
 {

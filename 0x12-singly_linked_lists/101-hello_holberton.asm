@@ -5,14 +5,16 @@ global _start
 section .text
 
 _start:
-	mov edx, len
-	mov ecx, msg
-	mov ebx, 1
-	mov eax, 4 ;sys call sys_write
-	int 0x80 ;calls kernel
+	mov rax, 1
+	mov rdi, 1
+	mov rsi, msg
+	mov rdx, msglen
+	syscall
 
-	mov eax, 1 ;system call sys_exit
+	mov rax, 60
+	mov rdi, 0
+	syscall
 
-section .data
-	msg db "Hello, Holberton", 10 ;allocates memory. 10 = newline or 0xa
-	len equ $ -msg ;length
+section .rodata
+	msg: db "Hello, Holberton", 10 ;allocates memory. 10 = newline or 0xa
+	msglen: equ $ - msg ;length

@@ -3,27 +3,28 @@
  * add_nodeint - Adds a integer to a list.(beginning)
  * @head: pointer to list
  * @n: Integer to add
+ * Return: addres of node
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 
-	listint_t *ptr = malloc(sizeof(listint_t));
+listint_t *ptr = malloc(sizeof(listint_t));
 
 if (head == NULL)
-	{
-		return (0);
-	}
+{
+	return (NULL);
+}
 if (n == '\0')
-	{
-		ptr->n = '\0';
-		return (0);
-	}
+{
+ptr->n = '\0';
+return (NULL);
+}
 ptr->n = n;
 ptr->next = NULL;
 
 if (ptr == NULL)
 {
-	return (0);
+	return (NULL);
 }
 ptr->next = *head;
 *head = ptr;

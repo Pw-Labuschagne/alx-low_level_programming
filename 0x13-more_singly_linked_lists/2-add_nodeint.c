@@ -13,18 +13,19 @@ if (head == NULL)
 	{
 		return (0);
 	}
-if (n == NULL)
+if (n == '\0')
 	{
-		ptr->n = NULL;
+		ptr->n = '\0';
 		return (0);
 	}
 ptr->n = n;
 ptr->next = NULL;
 
-if (ptr == NULL);
+if (ptr == NULL)
 {
 	return (0);
 }
 ptr->next = *head;
 *head = ptr;
 return (ptr);
+}

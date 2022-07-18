@@ -6,4 +6,8 @@
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
+	unsigned int c = 0;
+	listint_t *ptr = malloc(sizeof(listint_t));
+
+
 }

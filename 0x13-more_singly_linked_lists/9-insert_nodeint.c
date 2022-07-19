@@ -19,6 +19,11 @@ if (new == NULL || *head == NULL)
 {
 	return (0);
 }
+if (idx == 0)
+{
+	new->next = move;
+	*head = new;
+	return (new);
 
 idx--;
 while (idx != 1)

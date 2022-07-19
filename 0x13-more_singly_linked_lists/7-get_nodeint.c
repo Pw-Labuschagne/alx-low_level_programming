@@ -20,12 +20,12 @@ if (head == NULL)
 
 while (i < index)
 {
+	if (head == NULL)
+	{
+	return (0);
+	}
 	head = head->next;
 	i++;
-}
-if (head == NULL)
-{
-	return (0);
 }
 return (head);
 }

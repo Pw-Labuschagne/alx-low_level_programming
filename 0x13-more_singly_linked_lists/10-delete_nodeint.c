@@ -15,7 +15,7 @@ if (*head == NULL)
 {
 	return (-1);
 }
-if (c = NULL || p = NULL)
+if (c == NULL || p == NULL)
 {
 	return (-1);
 }

@@ -5,7 +5,7 @@
  * @index: place where the node should be deleted
  * Return: 0
  */
-int delete_node_at_index(listint_t **head, unsigned int index)
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	unsigned int i = 0;
 	listint_t *c = *head, *p = *head;
@@ -31,7 +31,7 @@ while (i < index)
 	c = c->next;
 	i++;
 }
-p->next = c-next;
+p->next = c->next;
 free(c);
 c = NULL;
 

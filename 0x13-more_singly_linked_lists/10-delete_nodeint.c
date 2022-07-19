@@ -7,4 +7,33 @@
  */
 int delete_node_at_index(listint_t **head, unsigned int index)
 {
+	unsigned int i = 0;
+	listint_t *c = *head, *p = *head;
+
+
+if (*head == NULL)
+{
+	return (-1);
+}
+
+if (index == 0)
+{
+	*head = c->next;
+	free(c);
+	c = NULL;
+	return (1);
+}
+
+index--;
+while (i < index)
+{
+	p = c;
+	c = c->next;
+	i++;
+}
+p->next = c-next;
+free(c);
+c = NULL;
+
+return (1);
 }

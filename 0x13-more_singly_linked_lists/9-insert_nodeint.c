@@ -13,7 +13,7 @@ listint_t *move = *head;
 listint_t *new = malloc(sizeof(listint_t));
 
 
-if (new == NULL || move == NULL)
+if (new == NULL)
 {
 	return (0);
 }
@@ -28,7 +28,7 @@ if (idx == 0)
 }
 
 idx--;
-while (c < (idx - 1))
+while (c < idx)
 {
 	if (new == NULL || move == NULL)
 	{

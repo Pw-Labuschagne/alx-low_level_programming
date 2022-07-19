@@ -35,7 +35,7 @@ while (c < (idx - 1))
 		return (0);
 	}
 	move = move->next;
-	c++;;
+	c++;
 }
 new->next = move->next;
 move->next = new;

@@ -15,6 +15,10 @@ if (*head == NULL)
 {
 	return (-1);
 }
+if (c = NULL || p = NULL)
+{
+	return (-1);
+}
 
 if (index == 0)
 {
@@ -27,6 +31,10 @@ if (index == 0)
 index--;
 while (i < index)
 {
+	if (p == NULL || c == NULL)
+	{
+		return(-1);
+	}
 	p = c;
 	c = c->next;
 	i++;

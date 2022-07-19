@@ -33,7 +33,7 @@ while (i < index)
 {
 	if (p == NULL || c == NULL)
 	{
-		return(-1);
+		return (-1);
 	}
 	p = c;
 	c = c->next;

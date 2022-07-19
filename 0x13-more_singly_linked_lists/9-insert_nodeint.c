@@ -8,12 +8,12 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-
+unsigned int c = 0;
 listint_t *move = *head;
 listint_t *new = malloc(sizeof(listint_t));
 
 
-if (new == NULL || *head == NULL)
+if (new == NULL || move == NULL)
 {
 	return (0);
 }
@@ -28,10 +28,14 @@ if (idx == 0)
 }
 
 idx--;
-while (idx != 1)
+while (c < (idx - 1))
 {
+	if (new == NULL || move == NULL)
+	{
+		return (0);
+	}
 	move = move->next;
-	idx--;
+	c++;;
 }
 new->next = move->next;
 move->next = new;

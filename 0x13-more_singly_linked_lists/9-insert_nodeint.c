@@ -24,6 +24,7 @@ if (idx == 0)
 	new->next = move;
 	*head = new;
 	return (new);
+}
 
 idx--;
 while (idx != 1)

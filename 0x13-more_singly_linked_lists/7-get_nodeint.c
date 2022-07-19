@@ -13,6 +13,10 @@ if (index == 0)
 {
 return (head);
 }
+if (head == NULL)
+{
+	return (0);
+}
 
 while (i < index)
 {

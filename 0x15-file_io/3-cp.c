@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	ssize_t read_me, write_me;
 
 	if (argc != 3)
-		errnos("Usage: cp file_from file_to", argv[1] argv[2], 97);
+		errnos("Usage: cp file_from file_to", "" , 97);
 
 	fd1 = open(argv[1], O_RDONLY);
 
@@ -38,16 +38,19 @@ int main(int argc, char *argv[])
 
 	if (fd2 < 0)
 		errnos("Error: Can't write to ", argv[2], 99);
-
-
-	read_me = read(fd1, buffer, 1024);
-		if (read_me < 0)
-			errnos("Error: Can't read from file ", argv[1], 98);
+	do
+	{
+		read_me = read(fd1, buffer, 1024);
+			if (read_me < 0)
+				errnos("Error: Can't read from file ", argv[1], 98);
 	
-	write_me = write(fd2, buffer, read_me);
-		if (write_me < 0)
-			errnos("Error: Can't write to file ", argv[2], 99);
+		write_me = write(fd2, buffer, read_me);
+			if (write_me < 0)
+				errnos("Error: Can't write to file ", argv[2], 99);
+	}
 
+		while (read_me == 1024)
+		{
 		FD_VALUE = close(fd1);
 			if (FD_VALUE < 0)
 				errnos("Error: Can't close file descriptor %d\n",argv[1], 100);
@@ -55,6 +58,6 @@ int main(int argc, char *argv[])
 		FD_VALUE = close(fd2);
 			if (FD_VALUE < 0)
 				errnos("Error: Can't close file descriptor %d\n", argv[2], 100);
-	
+		}
 return (0);
 }

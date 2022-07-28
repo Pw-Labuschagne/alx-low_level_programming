@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * errnos - Standard error messages for failures
  * @message: Error message to be display
@@ -9,7 +11,7 @@
 
 void errnos(char *message, char *filename, int status)
 {
-	dprint(STDERR_FILENO, "%s%s\n", message, filename);
+	dprintf(STDERR_FILENO, "%s%s\n", message, filename);
 	exit(status);
 }
 
@@ -49,7 +51,7 @@ int main(int argc, char *argv[])
 				errnos("Error: Can't write to file ", argv[2], 99);
 	}
 
-		while (read_me == 1024)
+		while (read_me == 1024);
 		{
 		FD_VALUE = close(fd1);
 			if (FD_VALUE < 0)

@@ -8,7 +8,7 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 
-	int fd, append_me;
+	int fd, append_me, c, count = 0;
 
 	if (filename == NULL)
 		return (-1);
@@ -21,7 +21,10 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (fd < 0)
 		return (-1);
 
-	append_me =  write(fd, text_content);
+	for (c = 0; text_content[c]; c++)
+		count++;
+
+	append_me =  write(fd, text_content, count); 
 
 	if (append_me < 0)
 		return (-1);

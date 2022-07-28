@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * append_text_to_file - Appends text to a file
- * @filename: File to append  
+ * @filename: File to append
  * @text_content: Content to append to file
  * Return: 1 on success, -1 on failure
  */
@@ -33,7 +33,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	return (1);
 
-	
+
 
 
 }

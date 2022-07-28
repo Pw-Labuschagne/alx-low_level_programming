@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
 
 
 	read_me = read(fd1, buffer, 1024);
-		if (read_me < 0);
+		if (read_me < 0)
 			errnos("Error: Can't read from file ", argv[1], 98);
 	
 	write_me = write(fd2, buffer, read_me);
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 			errnos("Error: Can't write to file ", argv[2], 99);
 
 		FD_VALUE = close(fd1);
-			if (FD_VALUE < 0);
+			if (FD_VALUE < 0)
 				errnos("Error: Can't close file descriptor %d\n",argv[1], 100);
 
 		FD_VALUE = close(fd2);

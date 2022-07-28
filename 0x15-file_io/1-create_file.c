@@ -8,27 +8,27 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd, b, a = 0;
+	int fd, write_me, c, count = 0;
 
 	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 
 	if (fd < 0)
 		return (-1);
 
+	if (text_content == NULL)
+		text_content = "";
+
 
 	if  (filename == NULL)
 		return (-1);
 
-	if (text_content)
-	{
-		while (text_content[a])
-		{
-			a++;
-			b = write(fd, text_content, a);
-			if (b != a)
-				return (-1);
-		}
-	}
+	for (c = 0; text_content[c]; c++);
+		count++;
+
+	write_me = write(fd, text_content, count);
+
+	if (write_me < 0)
+		return (-1);
 
 	close(fd);
 

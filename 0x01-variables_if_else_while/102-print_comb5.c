@@ -15,8 +15,6 @@ for (i = 0; i < 99; i++)
 	{
 		if (a > 99)
 			break;
-		if (a == 99 && b == 98)
-			break;
 
 		putchar((b / 10) + '0');
 		putchar((b % 10) + '0');
@@ -28,7 +26,9 @@ for (i = 0; i < 99; i++)
 
 		putchar(44);
 		putchar(32);
-
+		
+		if (a == 99 && b == 98)
+			break;
 		a++;
 	}
 b++;

@@ -5,13 +5,13 @@
  */
 int main(void)
 {
-unsigned int i, a, b, sum;
+unsigned long int i, a, b, sum;
 a = 0;
 b = 1;
 sum = a + b;
 for (i = 1; i <= 50; i++)
 {
-printf("%i, ", sum);
+printf("%lu, ", sum);
 a = b;
 b = sum;
 sum = a + b;

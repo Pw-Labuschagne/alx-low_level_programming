@@ -7,21 +7,21 @@
 
 int main(void)
 {
-	double first, second, sum;
+	unsigned first, second, sum;
 	int count;
 
 	first = 1;
 	second = 2;
 	sum = first + second;
 
-	printf("%f", sum);
+	printf("%u", sum);
 
-	for (count = 1; count == 98; count ++)
+	for (count = 1; count < 99; count ++)
 	{
 		first = second;
 		second = sum;
 		sum = first + second;
-		printf(", %f", sum);
+		printf(", %u", sum);
 	}
 	printf("\n");
 	return (0);

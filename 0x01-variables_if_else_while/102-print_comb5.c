@@ -12,7 +12,10 @@ a = 0;
 for (i = 0; i < 99; i++)
 {
 	for (c = 0; c < (100 - i); c++)
-	{		
+	{
+		if( a == 99)
+			break;
+
 		putchar((b / 10) + '0');
 		putchar((b % 10) + '0');
 

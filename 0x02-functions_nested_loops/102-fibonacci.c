@@ -9,8 +9,7 @@ int i, a, b, sum;
 a = 1;
 b = 2;
 sum = a + b;
-printf("1, 2, ");
-for (i = 4; i <= 50; i++)
+for (i = 3; i <= 50; i++)
 {
 printf("%d, ", sum);
 a = b;

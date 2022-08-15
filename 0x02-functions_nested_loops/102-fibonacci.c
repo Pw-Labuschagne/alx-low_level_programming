@@ -11,7 +11,7 @@ b = 1;
 sum = a + b;
 for (i = 3; i <= 50; i++)
 {
-printf("%d, ", sum);
+printf("%u, ", sum);
 a = b;
 b = sum;
 sum = a + b;

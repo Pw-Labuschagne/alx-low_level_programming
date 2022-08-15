@@ -9,7 +9,7 @@ unsigned int i, a, b, sum;
 a = 0;
 b = 1;
 sum = a + b;
-for (i = 3; i <= 50; i++)
+for (i = 1; i <= 50; i++)
 {
 printf("%u, ", sum);
 a = b;

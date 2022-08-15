@@ -6,8 +6,8 @@
 int main(void)
 {
 unsigned int i, a, b, sum;
-a = 1;
-b = 2;
+a = 0;
+b = 1;
 sum = a + b;
 for (i = 3; i <= 50; i++)
 {

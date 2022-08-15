@@ -5,36 +5,25 @@
  */
 int main(void)
 {
-int a, b, c, d;
-for (a = 48; a <= 57; a++)
+int a = 0, b = 0, i, c;
+
+for (i = 0; i < 100; i++)
 {
-for (b = 48; b <= 57; b++)
-{
-for (c = 48; c <= 57; c++)
-{
-for (d = 48; d <= 57; d++)
-{
-if (((c + d) > (a + b) && c >= a) || a < c)
-{
-putchar(a);
-putchar(b);
-putchar(' ');
-putchar(c);
-putchar(d);
-if (a + b + c + d == 227 && c == 57)
-{
-break;
-}
-else
-{
-putchar(',');
-putchar(' ');
-}
-}
-}
-}
-}
-}
-putchar('\n');
-return (0);
-}
+	if (b < 10)
+	{
+		for (c = 0; c < 100; c++)
+		{
+			_putchar('0');
+			_pucchar(b);
+			_putchar(' ');
+			if (a < 10)
+			{
+				_pucthar('0');
+			} 
+			_putchar(a);
+			a++
+		}
+	} else
+	{
+		_putchar(b);
+

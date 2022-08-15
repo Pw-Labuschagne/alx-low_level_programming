@@ -25,7 +25,7 @@ int main(void)
 		sum = first + second;
 	}
 	printf("%u", res);
-printf("\n");	
+printf("\n");
 return (0);
 }
 

@@ -20,5 +20,6 @@ a = b;
 b = sum;
 sum = a + b;
 }
+printf("\n");
 return (0);
 }

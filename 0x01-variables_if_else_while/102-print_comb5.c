@@ -14,6 +14,7 @@ for (i = 0; i < 99; i++)
 	a = 0;
 	for (c = 0; c < 100; c++)
 	{
+	
 		putchar((b / 10) + '0');
 		putchar((b % 10) + '0');
 
@@ -28,6 +29,7 @@ for (i = 0; i < 99; i++)
 		a++;
 	}
 b++;
+a = b + 1;
 }
 putchar('\n');
 return (0);

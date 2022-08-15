@@ -8,7 +8,7 @@ int main(void)
 int  a, b, c, i;
 
 b = 0;
-a = 0;
+a = 1;
 for (i = 0; i < 99; i++)
 {
 	for (c = 0; c < (100 - i); c++)

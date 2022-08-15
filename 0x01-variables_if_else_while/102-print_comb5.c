@@ -5,25 +5,30 @@
  */
 int main(void)
 {
-int a = 0, b = 0, i, c;
+int  a, b, c, i;
 
-for (i = 0; i < 100; i++)
+b = 0;
+
+for (i = 0; i < 99; i++)
 {
-	if (b < 10)
+	a = 0;
+	for (c = 0; c < 100; c++)
 	{
-		for (c = 0; c < 100; c++)
-		{
-			_putchar('0');
-			_pucchar(b);
-			_putchar(' ');
-			if (a < 10)
-			{
-				_pucthar('0');
-			} 
-			_putchar(a);
-			a++
-		}
-	} else
-	{
-		_putchar(b);
+		putchar((b / 10) + '0');
+		putchar((b % 10) + '0');
+		
+		putchar(32);
 
+		putchar((a / 10) + '0');
+		putchar((a % 10) + '0');
+
+		putchar(44);
+		putchar(32);
+
+		a++;
+	}
+b++;
+}
+putchar('\n');
+return (0);
+}

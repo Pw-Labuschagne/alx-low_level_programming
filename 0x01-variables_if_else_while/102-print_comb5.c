@@ -24,11 +24,11 @@ for (i = 0; i < 99; i++)
 		putchar((a / 10) + '0');
 		putchar((a % 10) + '0');
 
-		putchar(44);
-		putchar(32);
-		
 		if (a == 99 && b == 98)
 			break;
+
+		putchar(44);
+		putchar(32);
 		a++;
 	}
 b++;

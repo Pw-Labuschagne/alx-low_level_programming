@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	unsigned long int first, second, sum;
+	int64_t first, second, sum;
 	int count;
 
 	first = 1;

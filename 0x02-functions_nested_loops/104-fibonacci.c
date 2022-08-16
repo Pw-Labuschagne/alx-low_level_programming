@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int64_t first, second, sum;
+	unsigned long int first, second, sum;
 	int count;
 
 	first = 1;
@@ -16,7 +16,7 @@ int main(void)
 
 	printf("%lu", sum);
 
-	for (count = 1; count < 99; count ++)
+	for (count = 1; count < 99; count++)
 	{
 		first = second;
 		second = sum;

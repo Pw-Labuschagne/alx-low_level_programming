@@ -7,7 +7,7 @@
  */
 void rem(int n)
 {
-	if (n < 48)
+	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;

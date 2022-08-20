@@ -43,7 +43,7 @@ int _atoi(char *s)
 		if (i % 2 != 0)
 			n = -n;
 		b = n;
-		return (b);
 	}
 	}
+return (b);
 }

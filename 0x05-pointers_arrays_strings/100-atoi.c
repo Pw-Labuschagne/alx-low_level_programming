@@ -45,4 +45,5 @@ int _atoi(char *s)
 		b = n;
 		return (b);
 	}
+	}
 }

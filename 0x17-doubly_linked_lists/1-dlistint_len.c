@@ -13,12 +13,12 @@ size_t dlistint_len(const dlistint_t *h)
 
 	for (i = 0; h != NULL; i++)
 	{
-		if (h-> prev != NULL && prt == 0)
+		if (h->prev != NULL && prt == 0)
 		{
 			h = h->prev;
 			continue;
 		}
-		else if (h-prev == NULL)
+		else if (h->prev == NULL)
 		{
 			prt = 1;
 			i = 0;

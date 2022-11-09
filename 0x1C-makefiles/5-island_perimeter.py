@@ -27,7 +27,16 @@ def island_permeter(grid):
             if grid[v][h] == 0:
                 return
 
-            if flag_1 or flag_2 or flag_3 or flag_4:
+            if flag_1:
+                stick += 1
+
+            if flag_2:
+                stick += 1
+            
+            if flag_3:
+                stick += 1
+            
+            if flag_4:
                 stick += 1
 
             return stick

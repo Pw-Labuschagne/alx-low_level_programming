@@ -5,7 +5,7 @@
  * @n: Input
  * Return: Length of integer
  */
-void rem(int n)
+/*void rem(int n)
 {
 	if (n < 0)
 	{
@@ -21,7 +21,7 @@ void rem(int n)
 	{
 		_putchar(n + '0');
 	}
-}
+}*/
 
 /**
  * print_number - It prints numbers
@@ -30,5 +30,16 @@ void rem(int n)
  */
 void print_number(int n)
 {
-	rem(n);
+	/*rem(n);*/
+	if (n < 0)
+        {
+                _putchar('-');
+                n = -n;
+        }
+
+        do {
+                n = n / 10;
+                _putchar((n % 10) + '0');
+        }while (n / 10);
+       	_putchar(n + '0');
 }
